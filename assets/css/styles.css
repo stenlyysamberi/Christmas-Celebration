@@ -263,9 +263,8 @@ img{
 }
 
 .home__img{
-  width: 480px;
+  width: 380px;
   justify-self: center;
-  margin-right: 12px;
 }
 
 .home__title{
