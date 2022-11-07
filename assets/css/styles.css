@@ -265,6 +265,7 @@ img{
 .home__img{
   width: 380px;
   justify-self: center;
+  margin: 0;
 }
 
 .home__title{
