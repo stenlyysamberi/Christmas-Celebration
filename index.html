@@ -33,11 +33,18 @@
             <nav class="nav bd-container">
                 <a href="#" class="nav__logo">Christmas Celebration</a>
 
+                <audio autoplay controls>
+                    <source src="assets/audio/Joyful_.mp3" type="audio/mpeg">
+                    <source src="assets/audio/Joyful_.mp3" type="audio/wav">
+                </audio>
+
+               <!-- <iframe src="assets/audio/Joyful_.mp3" allow="autoplay" frameborder="0"></iframe> -->
+
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#share" class="nav__link">Shared</a></li>
-                        <li class="nav__item"><a href="#location" class="nav__link">Location</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Beranda</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">Waktu</a></li>
+                        <li class="nav__item"><a href="#location" class="nav__link">Rangkaian Ibadah</a></li>
                         <!-- <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li> -->
 
                         <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
@@ -55,7 +62,7 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__img">
-                        <img src="assets/img/hero.svg" alt="">
+                        <img src="assets/img/logo-rock.png" alt="">
                     </div>
 
                     <div class="home__data">
@@ -70,46 +77,63 @@
             <section class="share section bd-container" id="share">
                 <div class="share__container bd-grid">
                     <div class="share__data">
-                        <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                        <h2 class="section-title-center">Save Date</h2>
+                        
                         <!-- <img src="assets/img/alamat.svg" alt="" srcset=""> -->
-                        <!-- <p class="share__description">Senin, 12 Desember 2022</p>
-                        <p class="share__description">ROCK CENTER <br>Jl. Esau Sesa No.99 (Sebelum lampu merah Mako Brimop)</p>
-                        <a href="#" class="button">Lihat lokasi</a> -->
-                        <!-- <p class="share__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo maxime aliquid beatae culpa temporibus necessitatibus commodi porro iure est quam molestiae, hic id, distinctio itaque magni dolor sit debitis accusantium.</p> -->
-                        <p class="share__description">Sharing these holidays is the best gift you can give,
-                             give a present or share your love with the people you love the most and celebrate with great happiness.</p>
-                        <!-- <a href="#" class="button">Lihat lokasi</a> -->
+                        <p class="share__description">Senin, 12 Desember 2022</p>
+                        <p class="share__description">18.30 WIT</p>
+                        <p class="share__description"><b>ROCK CENTER</b> <br>Jl. Esau Sesa No.99 (Sebelum lampu merah Mako Brimop)</p>
+                        <a target="_blank" href="https://www.google.com/maps/place/GBI+Rock+Ministry/@-0.8855336,134.0466698,17z/data=!3m1!4b1!4m5!3m4!1s0x2d53f548c4d15c5f:0x765f6c5810b0e4c3!8m2!3d-0.8855336!4d134.0466698" class="button">Petunjuk arah</a>
+                       
                     </div>
 
                     <div class="share__img">
-                        <img src="assets/img/send.png" alt="">
+                        <img src="assets/img/shared.png" alt="">
                     </div>
                 </div>
             </section>
 
             <!--========== DECORATION ==========-->
-            <!-- <section class="decoration section bd-container" id="decoration">
-                <h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
+            <section class="decoration section bd-container" id="location">
+                <h2 class="section-title">Rangkaian Acara <br> Natal</h2>
                 <div class="decoration__container bd-grid">
                     <div class="decoration__data">
                         <img src="assets/img/decoration1.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Christmas Bells</h3>
-                        <a href="#" class="button button-link">Go Shopping</a>
+                        <h3 class="decoration__title">Pembukaan</h3>
+                        <ul>
+                            <li>Ucapan selamat datang</li>
+                            <li>Doa</li>
+                            <li>Persembahan tarian</li>
+                            <li>Menolog/Drama singkat</li>
+                        </ul>
+                        <!-- <a href="#" class="button button-link">Go Shopping</a> -->
                     </div>
 
                     <div class="decoration__data">
                         <img src="assets/img/decoration2.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Christmas Candies</h3>
-                        <a href="#" class="button button-link">Go Shopping</a>
+                        <h3 class="decoration__title">Ibadah</h3>
+                        <ul>
+                            <li>Music opening</li>
+                            <li>Puji pujian Natal</li>
+                            <li>Candle light</li>
+                            <li>Persembahan</li>
+                        </ul>
+                        <!-- <a href="#" class="button button-link">Go Shopping</a> -->
                     </div>
 
                     <div class="decoration__data">
                         <img src="assets/img/decoration3.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Christmas Trees</h3>
-                        <a href="#" class="button button-link">Go Shopping</a>
+                        <h3 class="decoration__title">Penutup</h3>
+                        <ul>
+                            <li>Kesan & pesan Natal</li>
+                            <li>Ucapan terimakasih</li>
+                            <li>Ramah tamah</li>
+                            <li>Christmas suprise</li>
+                        </ul>
+                        <!-- <a href="#" class="button button-link">Go Shopping</a> -->
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <!--========== ACCESSORIES ==========-->
             <!-- <section class="accessory section bd-container" id="accessory">
@@ -159,9 +183,10 @@
             </section> -->
 
             <!--========== SEND GIFT ==========-->
-            <section class="send section" id="location">
+            <!-- <section class="send section" id="location">
                 <div class="send__container bd-container bd-grid">
                     <div class="send__content">
+                       
                         <h2 class="section-title-center send__title">Save date</h2>
                         <p class="send__description">Monday, 12 December 2022 <br> <b>ROCK CENTER</b><BR>Jl. Esau Sesa No.99 (Sebelum lampu merah Mako Brimop)</p>
                         <div class="send__description" style="font-size: 12px;">
@@ -179,7 +204,7 @@
                         <img src="assets/img/accessory1.png" alt="" width="400">
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <!--========== FOOTER ==========-->
