@@ -20,7 +20,39 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-rock.png">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Jouele/2.2.2/jquery.jplayer.min.js"></script>
+
         <title>GBI ROCK | MANOKWARI</title>
+
+        <script type="text/javascript">
+
+            $("document").ready(function () {
+    
+                $("#jpId").jPlayer(
+    
+                    {
+    
+                        ready: function () {
+    
+                            $(this).jPlayer("setMedia", {
+    
+                                mp3: "joyful.mp3" // Url of the mp3 file
+    
+                            }).jPlayer("play");
+    
+                        },
+    
+                        supplied: "mp3"
+    
+                    }
+    
+                );
+    
+            });
+    
+        </script>
     </head>
     <body>
         <!--========== SCROLL TOP ==========-->
@@ -33,10 +65,8 @@
             <nav class="nav bd-container">
                 <a href="#" class="nav__logo">Christmas Celebration</a>
 
-                <audio controls autoplay>
-                    <source src="assets/audio/joyful.mp3">
-                    <p>If audio does not start, the <audio> HTML element is not supported in your browser.</p>
-                </audio>
+                <div id="jpId"></div>
+                <audio src="joyful.mp3" autoplay controls></audio>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -241,24 +271,34 @@
                     <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
                 </div>
             </div> -->
+
+            <audio autoplay controls loop id="audio">
+                <source src="assets/audio/joyful.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+              </audio>
+
+
         <footer class="footer section">
            
             <p class="footer__copy">&#169; 2022 <a href="http://iconnect.web.id" target="_blank" rel="noopener noreferrer">iconnect.web.id</a>. All right reserved</p>
         </footer>
 
+        <script>
+          
+        </script>
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!-- <script src="assets/audio/audio.min.js"></script> -->
+      
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
 
         <script>
             window.onload = function(){
-              document.getElementById("autoplay").play();
-            
             }
+
+            
         </script>
     </body>
 </html>

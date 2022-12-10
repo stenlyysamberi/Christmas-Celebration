@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Jouele/2.2.2/jquery.jplayer.min.js"></script>
+
+    <script type="text/javascript">
+
+        $("document").ready(function () {
+
+            $("#jpId").jPlayer(
+
+                {
+
+                    ready: function () {
+
+                        $(this).jPlayer("setMedia", {
+
+                            mp3: "joyful.mp3" // Url of the mp3 file
+
+                        }).jPlayer("play");
+
+                    },
+
+                    supplied: "mp3"
+
+                }
+
+            );
+
+        });
+
+    </script>
+</head>
+<body>
+    <!-- <div id="jpId"></div> -->
+</body>
+</html>
