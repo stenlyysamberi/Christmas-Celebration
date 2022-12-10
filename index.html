@@ -19,7 +19,7 @@
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/accessory5.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-rock.png">
         <title>GBI ROCK | MANOKWARI</title>
     </head>
     <body>
@@ -33,7 +33,7 @@
             <nav class="nav bd-container">
                 <a href="#" class="nav__logo">Christmas Celebration</a>
 
-                <audio controls autoplay="true">
+                <audio id="autoplay">
                     <source src="assets/audio/joyful.mp3" type="audio/mpeg">
                     <p>If audio does not start, the <audio> HTML element is not supported in your browser.</p>
                 </audio>
@@ -253,5 +253,12 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            window.onload = function(){
+              document.getElementById("autoplay").play();
+            
+            }
+        </script>
     </body>
 </html>
