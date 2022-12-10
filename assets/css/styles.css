@@ -70,10 +70,10 @@ html{
 } */
 
 body.dark-theme{
-  --first-color-send: #3494f3;
+  --first-color-send: #85c1fd;
   --title-color: #F3F1F1;
   --text-color: #D1C7C8;
-  --body-color: #1f89ec;
+  --body-color: #6fb2f0;
   --container-color: #0a65a1;
  
 }
